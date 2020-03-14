@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?halaman=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?halaman=$1
+RewriteRule produk/ubah/?([0-9-]+) index.php?halaman=ubahproduk&id=$1
+RewriteRule produk/hapus/?([0-9-]+) index.php?halaman=hapusproduk&id=$1
+RewriteRule produk/tambah index.php?halaman=tambahproduk
+RewriteRule detail/?([0-9-]+) index.php?halaman=detail&id=$1
+RewriteRule pelanggan/ubahpelanggan/?([0-9-]+) index.php?halaman=ubahpelanggan&id=$1
+RewriteRule pelanggan/hapuspelanggan/?([0-9-]+) index.php?halaman=hapuspelanggan&id=$1
+RewriteRule ubahstatus/?([0-9-]+) index.php?halaman=ubahstatus&id=$1
